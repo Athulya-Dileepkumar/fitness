@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <!-- bootstrap -->
+    <!-- css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- favicon -->
+
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/8694/8694414.png">
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!--fontfamily  -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Libre Baskerville", serif;
+        }
+    </style>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary"> <i class="fa-solid fa-dumbbell"
+                    style="color: rgb(116, 192, 252);"></i> Women-Fitness</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img width="100%" height="700px"
+                    src="https://cdn.dribbble.com/userupload/26045169/file/original-221db7d6f3d27fd4738b24ec7e926fb2.jpg?resize=2048x1536&vertical=center"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img width="100%" height="700px"
+                    src="https://img.magnific.com/premium-photo/woman-exercising-stretching-mat_926199-3779700.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img width="100%" height="700px"
+                    src="https://img.magnific.com/free-psd/banner-fitness-trainer-template_23-2148704636.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- content -->
+
+    <h3 class="bg-secondary text-dark p-2 m-2 text-center "> Our-Workouts</h3>
+    <div class="row bg-dark">
+        <div class="col-3">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="300px"
+                    src="https://hips.hearstapps.com/hmg-prod/images/hyrox-lunges-68541c3907e54.jpg?crop=0.668xw:1.00xh;0.204xw,0&resize=640:*"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A 30-Minute Hyrox Workout For Beginners</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">A 30-Minute Hyrox Workout For
+                                        Beginners</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>**A 30-Minute HYROX Workout for Beginners:** A beginner-friendly workout that
+                                        combines simple cardio and functional exercises such as running, squats, lunges,
+                                        and burpees in a 30-minute session to improve strength, endurance, and overall
+                                        fitness.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="300px"
+                    src="https://hips.hearstapps.com/hmg-prod/images/an-excited-woman-riding-a-bike-on-the-wooden-bridge-royalty-free-image-1746455228.pjpeg?crop=0.670xw:1.00xh;0.207xw,0&resize=640:*"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Cycling Vs Running:Which is better?</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cycling Vs Running</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>**Cycling vs Running:** Both are excellent cardio exercises that improve heart
+                                        health and burn calories. **Cycling** is low-impact and easier on the joints,
+                                        making it suitable for beginners and people with knee issues, while **running**
+                                        burns more calories in less time and helps improve bone strength and endurance.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="300px"
+                    src="https://hips.hearstapps.com/hmg-prod/images/strength-training-66ed958d3de94.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Age-Proof Your Body with these 4 moves</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Age-Proof Your Body with these 4
+                                        moves</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>**Age-Proof Your Body with These 4 Moves:** A simple four-exercise routine
+                                        designed to improve strength, balance, flexibility, and mobility, helping you
+                                        stay active, maintain independence, and support overall health as you age.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="300px"
+                    src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1324214580-68430bbc7a066.jpg?crop=0.588xw:0.883xh;0.153xw,0.0383xh&resize=640:*"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A 4-Move Workout For Stength And Mobility</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">A 4-Move Workout For Stength And
+                                        Mobility</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>**A 4-Move Workout for Strength and Mobility:** A simple workout consisting of
+                                        four exercises designed to build muscle strength, improve flexibility, and
+                                        enhance joint mobility, helping you move better and stay physically fit.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-4 bg-dark ">
+        <div class="col-3 ">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="300px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXpXAznufcE23v-DrZD7WSUuEaQDSW1zOn4Popv3LFFyGDUv2A8sbhnb0K&s=10"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A 250-Rep Kettlebell workout from A Hyrox Champ</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">A 250-Rep Kettlebell workout
+                                        from A Hyrox Champ</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>A 250-rep push-up workout from a HYROX champion is a high-volume training session
+                                        where you complete a total of 250 push-ups, usually broken into smaller sets
+                                        with short rest periods. It is designed to build upper-body strength, muscular
+                                        endurance, and mental toughness, helping improve overall fitness and
+                                        performance.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="320px"
+                    src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1132086660-692f1173dcb80.jpeg?crop=0.668xw:1.00xh;0.105xw,0&resize=1120:*"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Cardio And FatBurn Workout</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cardio And FatBurn Workout</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>**Cardio and Fat Burn Workout:** A workout that combines exercises like running,
+                                        jumping jacks, burpees, and high knees to increase your heart rate, burn
+                                        calories, improve endurance, and support fat loss while boosting overall
+                                        fitness.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="300px" src="https://femina.wwmindia.com/content/2021/may/workout-011620729517.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A 250-Rep Kettlebell workout from A Hyrox Champ</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">A 250-Rep Kettlebell workout
+                                        from A Hyrox Champ</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>A 250-rep push-up workout from a HYROX champion is a high-volume training
+                                        session where you complete a total of **250 push-ups**, usually broken into
+                                        smaller sets with short rest periods. It is designed to build **upper-body
+                                        strength, muscular endurance, and mental toughness**, helping improve overall
+                                        fitness and performance. ([womenshealthmag.com][1])
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img height="300px"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2018/04/workout-routines-for-women.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">A 250-Rep pushup workout from A Hyrox Champ</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                        More Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">A 250-Rep pushup workout from A
+                                        Hyrox Champ</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>A 250-rep push-up workout from a HYROX champion is a high-volume training
+                                        session where you complete a total of **250 push-ups**, usually broken into
+                                        smaller sets with short rest periods. It is designed to build **upper-body
+                                        strength, muscular endurance, and mental toughness**, helping improve overall
+                                        fitness and performance. ([womenshealthmag.com][1])
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="bg-secondary text-dark p-2 m-2 text-center ">Trainers</h3>
+    <div class="row bg-dark">
+        <div class="col-4">
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Kayla Itsines</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Jillian Michaels</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Kelsey Wells</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Massy Arias</a>
+
+
+            </div>
+        </div>
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">Kayla Itsines</h4>
+                <img width="400px" height="200px"
+                    src="https://images.openai.com/static-rsc-4/xRFulDd7S0VaRUlm48JT_VX1hLp2w5aM3KViG-Lye8MMutyO7RNy1tEuFfFUrbGcvamCvIrrL5ObtkMWunXZjTTAWujEYnsDE6Ar9t2RWVcZPpHO9U6yFdU08k7TRbcJpsQxP8dJty1sA-iBBS6mHmGV52YgLuaQdb5r5neStJAq0jtPZ27yV4CTinySZpU0?purpose=fullsize"
+                    alt="">
+                <h4 id="list-item-2">Jillian Michaels</h4>
+                <img width="400px" height="200px"
+                    src="https://images.openai.com/static-rsc-4/7YelXcJK5cPTuaW2H7XYcZH6HUQDY_xyr55VjJRPLI8REdGHw5h_gDtkTiLeS4x6VkxkwSuS-a7glXoK-qBwe44mNcnXBdaRAks2igszn_Qvnw7fkROUmxY5zHfr-1ZKXbo6YdbgV71JdeloEaBeSwANYjC5lAPjFJMkJfMCx1wEdwDVHKdxHvFt0jMoy6w0?purpose=fullsize"
+                    alt="">
+                <h4 id="list-item-3">Kelsey Wells</h4>
+                <img width="400px" height="200px"
+                    src="https://images.openai.com/static-rsc-4/xzZsFTYMy2ZYCDWFpgFkJcEKbELsZGeu1pmBOhjY1YhoQAPJ6CsnBFYdeDK_uxeuEMg1v6rrFc6_-fJCvWPcdcnSqsf95yWmq5ts3N9bMAcHemysq_sUjlr5xJ2npzmtOWCvIsQjQziyqH-tRjaubpXlfpQNCcdayAtUkNGyjS4ILkK0BMF8YxKdaEC-D-YG?purpose=fullsize"
+                    alt="">
+                <h4 id="list-item-4">Massy Arias</h4>
+                <img width="400px" height="200px"
+                    src="https://images.openai.com/static-rsc-4/CuOmFNOWQfAnpLHHbuIjrXfs51BLh9gVddvQGAGj0lj6VtXFCtFLrenRHNZYWjfmANKPZW3bVjb6SI6A6XEI1YhydTNmDWDAozWehRzunT43XoV59mC6N2OukMU3eYxvSw7aU0CYns6iQf4haAte0nBhJDqxjT5FUeasZkhpSFr7BylctoDGRcVWcUBawHdB?purpose=fullsize"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <h3 class="bg-secondary text-dark p-2 m-2 text-center ">Registration</h3>
+    <div class="row bg-dark">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow p-4">
+                        <h3 class="text-center mb-4">Fitness Registration Form</h3>
+
+                        <form>
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+
+                            <!-- Age -->
+                            <div class="mb-3">
+                                <label class="form-label">Age</label>
+                                <input type="number" class="form-control" placeholder="Enter your age">
+                            </div>
+
+                            <!-- Choose Trainer -->
+                            <div class="mb-3">
+                                <label class="form-label">Choose Trainer</label>
+                                <select class="form-select">
+                                    <option selected>Select Trainer</option>
+                                    <option>Kayla Itsines</option>
+                                    <option>Jillian Michaels</option>
+                                    <option>Yasmin Karachiwala</option>
+                                    <option>Namrata Purohit</option>
+                                </select>
+                            </div>
+
+                            <!-- Choose Time -->
+                            <div class="mb-3">
+                                <label class="form-label">Choose Time</label>
+                                <input type="time" class="form-control">
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="d-flex gap-2">
+                                <button type="submit" class="btn btn-dark w-50">
+                                    Submit
+                                </button>
+                                <button type="reset" class="btn btn-secondary w-50">
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-center bg-light">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2020 Copyright:
+            <a class="text-body" href="https://womenfitness.com/">womenfitness.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
